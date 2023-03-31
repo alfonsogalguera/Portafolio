@@ -1,0 +1,163 @@
+
+.c{
+    height: 80vh;
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: .5s all ease;
+}
+.c.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+.c-bg{
+    width: 20px;
+    height: 100%;
+    background-color: blue;
+    position: absolute;
+}
+.c-wrapper{
+    padding: 50px;
+    display: flex;
+}
+.c.left{
+    flex: 1;
+}
+.c.right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.c-title{
+    font-size: 60px;
+    width: 80%;
+}
+.c-info-item{
+    display: flex;
+    align-items: center;
+    margin: 50px;
+    font-weight: 300;
+    width: 70%;
+}
+.c-icon{
+    width: 30px;
+    height: 30px;
+    margin-right: 2px;
+}
+.c-desc{
+    font-weight: 200;
+}
+form{
+    margin-top: 20px;
+}
+input{
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 10px 0px;
+    font-size: 14px;
+    padding-left: 14px;
+}
+textarea{
+    width: 100%;
+    margin: 10px 0px;
+    font-size: 14px;
+    padding-left: 14px;
+}
+button{
+    bottom: none;
+    padding: 15px 35px 15px 35px;
+    background-color: white;
+    color: black;
+    border: 2px solid blue;
+    border-radius: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+button:hover {
+    background-color: blue; 
+    color: white;
+    border: 2px solid black;
+}
+
+@media screen and (min-width: 540px) and (max-width: 915px){
+  .c{
+    height: 100%;
+}
+}
+@media screen and (max-width: 480px) {
+    .c-wrapper {
+      flex-direction: column;
+      padding: 0px 50px;
+    }
+  
+    .c-title {
+      font-size: 30px;
+    }
+  
+    .c-info-item {
+      margin: 20px 0px;
+      width: 100%;
+    }
+  
+    .c-desc {
+      display: none;
+    }
+  
+    form {
+      margin-top: 0px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    input {
+      width: 35%;
+      height: 40px;
+      margin: 10px;
+      margin-left: 0;
+    }
+  
+    button {
+      margin-top: 10px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .c-wrapper {
+      flex-direction: column;
+      padding: 0px 50px;
+    }
+  
+    .c-title {
+      font-size: 30px;
+    }
+  
+    .c-info-item {
+      margin: 20px 0px;
+      width: 100%;
+    }
+  
+    .c-desc {
+      display: none;
+    }
+  
+    form {
+      margin-top: 0px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    input {
+      width: 35%;
+      height: 40px;
+      margin: 10px;
+      margin-left: 0;
+    }
+  
+    button {
+      margin-top: 10px;
+    }
+  }
